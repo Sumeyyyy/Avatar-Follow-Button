@@ -10,17 +10,21 @@
             <h2 class="name">Sumeyyyy</h2>
             <p class="intro">Hi i am Shri</p>
             <button type="button" id="button" class="button">Follow</button>
+            <p class="bottom" id="end"></p>
         </div>
         <script>
              const followbtn = document.getElementById("button");
+             const text = document.getElementById("end");
             followbtn.addEventListener("click", function(){
                 if(followbtn.textContent === "Follow"){
                     followbtn.textContent = "Following"
                     followbtn.style.backgroundColor = "seagreen"
+                    text.textContent = "You are following Sumeyyyy!"
                 }
                 else{
                     followbtn.textContent = "Follow"
                     followbtn.style.backgroundColor = "skyblue"
+                    text.textContent = ""
                 }
             });
         </script>
