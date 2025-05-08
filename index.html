@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="body">
+        <div class="container">
+            <img src="Avatar.png" alt="User Image" class="avatar">
+            <h2 class="name">Sumeyyyy</h2>
+            <p class="intro">Hi i am Shri</p>
+            <button type="button" id="button" class="button">Follow</button>
+        </div>
+        <script>
+             const followbtn = document.getElementById("button");
+            followbtn.addEventListener("click", function(){
+                if(followbtn.textContent === "Follow"){
+                    followbtn.textContent = "Following"
+                    followbtn.style.backgroundColor = "seagreen"
+                }
+                else{
+                    followbtn.textContent = "Follow"
+                    followbtn.style.backgroundColor = "skyblue"
+                }
+            });
+        </script>
+    </body>
+</html>
